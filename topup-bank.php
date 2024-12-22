@@ -6,9 +6,7 @@ require_once(__DIR__ . "/includes/header.php");
 require_once(__DIR__ . "/config/db.php");
 require_once(__DIR__ . "/includes/helpers.php");
 
-// Kiểm tra nếu người dùng chưa đăng nhập
 if (!isset($_SESSION['username'])) {
-    // Lưu URL hiện tại vào session để dùng sau khi đăng nhập
     $_SESSION['redirect_url'] = $_SERVER['REQUEST_URI'];
 }
 
@@ -39,8 +37,6 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
         </div>
         <select class="form-control" name="name" id="bankSelect" style="display: none;" required>
             <option value="MB" selected>MBBank</option>
-            <!-- Loại bỏ Vietcombank -->
-            <!-- Thêm các ngân hàng khác nếu cần -->
 
         </select>
 
@@ -81,13 +77,11 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
         return trim(str_replace('đ', '', $value));
     }
 
-    // Mảng ánh xạ số tài khoản và tên chủ thẻ cố định cho từng ngân hàng
     $fixed_info = array(
         "MB" => array("stk" => "409088888", "tentk" => "PHAM DUY QUANG"),
-        // Thêm các ngân hàng khác nếu cần thiết
     );
 
-    $name = isset($_POST['name']) ? $_POST['name'] : ""; // Lấy giá trị ngân hàng nếu được submit
+    $name = isset($_POST['name']) ? $_POST['name'] : ""; 
     
     if (isset($_POST['submit'])) {
         $name = check_string($_POST['name']);
@@ -165,17 +159,16 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                 $('#tentkInput').val(tentk);
             });
 
-            // Set default values for MB Bank
             $(document).ready(function () {
                 var defaultBank = 'MB';
-                $('#bankSelect').val(defaultBank).change(); // Trigger change to set default values
+                $('#bankSelect').val(defaultBank).change();
             });
 
             setInterval(function () {
                 var username = $('#usernameInput').val();
                 var content = 'PlayST ' + username + 'Player';
                 $('#ndInput').val(content);
-            }, 100); // 100ms = 0.1s
+            }, 100);
 
             $('#gemsInput').on('input', function () {
                 var gems = $(this).val();
@@ -200,10 +193,10 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
             var usernameInput = document.getElementById('usernameInput').value;
             if (!usernameInput || usernameInput.trim() === '') {
                 alert('Vui lòng đăng nhập để tiếp tục.');
-                window.location.href = '/login'; // Chuyển hướng đến trang đăng nhập
-                return false; // Ngăn chặn submit form khi chưa đăng nhập
+                window.location.href = '/login';
+                return false;
             }
-            return true; // Cho phép submit form nếu đã đăng nhập
+            return true;
         }
     </script>
     </div>
