@@ -32,7 +32,6 @@
 <a href="/reset-password" class="font-medium">Quên mật khẩu?</a>
 <div class="sub-form">
   <a href="/register" class="primary">Đăng ký tài khoản</a> 
- <!-- <a href="/register" class="primary">Đăng ký Free Gems</a> -->
 </div>
 </div>
   </section>
