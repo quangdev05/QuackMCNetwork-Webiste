@@ -7,9 +7,7 @@ error_reporting(E_ALL);
 
 require_once(__DIR__."/config/db.php");
 
-// Start the session
 session_start();
-// Trước khi hiển thị thông báo, xóa thông báo cũ (nếu có) từ session
 if (isset($_SESSION['register_success'])) {
     unset($_SESSION['register_success']);
 }
@@ -18,9 +16,7 @@ if (isset($_SESSION['error_message'])) {
     unset($_SESSION['error_message']);
 }
 
-// Change this to the file of the hash encryption you need, e.g. Bcrypt.php or Sha256.php
 require_once(__DIR__."/authme/Sha256.php");
-// The class name must correspond to the file you have in require above! e.g. require 'Sha256.php'; and new Sha256();
 $authme_controller = new Sha256();
 
 $action = get_from_post_or_empty('action');
@@ -40,7 +36,6 @@ if ($action && $user && $pass) {
     }
 }
 
-// Display the registration form
 ?>
     <style>
         .notice {
@@ -129,33 +124,27 @@ function get_from_post_or_empty($index_name) {
             ?: '');
 }
 
-// Register logic
 function process_register($user, $pass, $email, AuthMeController $controller, &$register_success, &$error_message) {
-    // Kiểm tra xem người dùng đã tồn tại hay không
     if ($controller->isUserRegistered($user)) {
         $error_message = 'Người dùng này đã tồn tại.';
         $_SESSION['error_message'] = $error_message;
         return false;
     } 
-    // Kiểm tra xem email đã tồn tại hay không
     elseif ($controller->isEmailRegistered($email)) {
         $error_message = 'Email này đã tồn tại.';
         $_SESSION['error_message'] = $error_message;
         return false;
     }
-    // Kiểm tra tính hợp lệ của email
     elseif (!is_email_valid($email)) {
         $error_message = 'Email không hợp lệ.';
         $_SESSION['error_message'] = $error_message;
         return false;
     } 
-    // Kiểm tra tính hợp lệ của mật khẩu nhập lại
     elseif ($pass !== $_POST['password_confirmation']) {
         $error_message = 'Mật khẩu nhập lại không khớp.';
         $_SESSION['error_message'] = $error_message;
         return false;
     } else {
-    // Nếu tất cả các điều kiện đều đúng, thực hiện đăng ký
         $register_success = $controller->register($user, $pass, $email);
         if ($register_success) {
             $_SESSION['register_success'] = true;
@@ -175,7 +164,7 @@ function process_register($user, $pass, $email, AuthMeController $controller, &$
 
 function is_email_valid($email) {
     return trim($email) === ''
-        ? true // accept no email
+        ? true
         : filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
