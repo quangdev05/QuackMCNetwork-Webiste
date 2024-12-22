@@ -1,7 +1,6 @@
 <?php
 require_once(__DIR__."/../config/db2.php");
 
-// Tổng hợp dữ liệu từ bảng recharge_logs
 $sql = "
     SELECT 
         user_id, 
@@ -17,10 +16,8 @@ $sql = "
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 
-// Lấy kết quả truy vấn
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Chuẩn bị câu lệnh chèn dữ liệu vào bảng tong_nap
 $insertSql = "
     INSERT INTO tong_nap (user_id, tongnap)
     VALUES (:user_id, :tongnap)
@@ -28,7 +25,6 @@ $insertSql = "
 ";
 $insertStmt = $conn->prepare($insertSql);
 
-// Ghi dữ liệu vào bảng tong_nap
 foreach ($results as $row) {
     $insertStmt->execute([
         ':user_id' => $row['user_id'],
@@ -38,6 +34,5 @@ foreach ($results as $row) {
 
 echo "Dữ liệu đã được tổng hợp và ghi vào bảng tong_nap.";
 
-// Đóng kết nối
 $conn = null;
 ?>
