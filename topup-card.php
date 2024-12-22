@@ -1,13 +1,11 @@
 <html>
 <?php
-session_start(); // Khởi động session
+session_start(); 
 $pageTitle = "Nạp Gems (card) | PlayST Network";
 require_once(__DIR__ . "/includes/head.php");
 require_once(__DIR__ . "/includes/header.php");
 
-// Kiểm tra nếu người dùng chưa đăng nhập
 if (!isset($_SESSION['username'])) {
-    // Lưu URL hiện tại vào session để dùng sau khi đăng nhập
     $_SESSION['redirect_url'] = $_SERVER['REQUEST_URI'];
 }
 
@@ -85,7 +83,6 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                 var gems = '';
                 var gems2 = '';
 
-                // Xác định giá trị cho gems và gems2 dựa trên mệnh giá đã chọn
                 switch (selectedAmount) {
                     case '10000':
                         gems = '10';
@@ -127,7 +124,6 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                         break;
                 }
 
-                // Đặt giá trị gems và gems2 vào các input readonly
                 $('#gems').val(gems);
                 $('#gems2').val(gems2);
             });
@@ -137,12 +133,12 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
         $(document).ready(function () {
             $('#napThe').submit(function (e) {
                 e.preventDefault();
-                $('#btn-submit').text('Loading...'); // Change button text to "Loading..."
+                $('#btn-submit').text('Loading...');
                 $.ajax({
                     type: 'POST',
                     data: $(this).serialize(),
                     complete: function () {
-                        $('#btn-submit').text('Nạp Thẻ'); // Reset button text
+                        $('#btn-submit').text('Nạp Thẻ');
                     }
                 });
             });
