@@ -99,15 +99,6 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
         } else {
             $url = "https://img.vietqr.io/image/$name-$stk-$temp.png?amount=$money&addInfo=$nd&accountName=$tentk";
             $code = rand(100000000, 999999999);
-            // $PTDUNG->insert("recharge_logs", array(
-            //     'user_id' => $_SESSION['user_id'],
-            //     'trans_id' => $code,
-            //     'amount2' => $money2,
-            //     'gems' => $gems,
-            //     'method' => "Bank-" . $name,
-            //     'status' => 3,
-            //     'create_time' => get_time(),
-            // ));
         }
     }
     ?>
