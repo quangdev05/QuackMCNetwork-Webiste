@@ -1228,3 +1228,111 @@ Stack trace:
 [16-Nov-2024 17:34:45 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection timed out) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 64
 [17-Nov-2024 16:56:26 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection timed out) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 64
 [17-Nov-2024 16:59:34 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[18-Dec-2024 21:21:22 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1264601714565185587/XqJE7CccDAUZP4Tl2Z0ENAmHm2Z3SIKcXCn-4tDkub25UP15dzDBDR-sJpZVymWf2k08): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 233
+[22-Dec-2024 02:51:22 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1264601714565185587/XqJE7CccDAUZP4Tl2Z0ENAmHm2Z3SIKcXCn-4tDkub25UP15dzDBDR-sJpZVymWf2k08): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 233
+[22-Dec-2024 14:00:49 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1264601714565185587/XqJE7CccDAUZP4Tl2Z0ENAmHm2Z3SIKcXCn-4tDkub25UP15dzDBDR-sJpZVymWf2k08): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 233
+[22-Dec-2024 14:21:03 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:03 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:04 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:04 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:04 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:05 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:06 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:06 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:06 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:24 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:24 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:21:24 Asia/Ho_Chi_Minh] PHP Notice:  Trying to access array offset on value of type null in /home/tplaystclick/public_html/config/db.php on line 134
+[22-Dec-2024 14:22:37 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function str_starts_with() in /home/tplaystclick/public_html/api/game-recharge-bank.php:9
+Stack trace:
+#0 /home/tplaystclick/public_html/api/game-recharge-bank.php(15): get_api_key()
+#1 {main}
+  thrown in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 9
+[22-Dec-2024 14:25:21 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function str_starts_with() in /home/tplaystclick/public_html/api/game-recharge-bank.php:9
+Stack trace:
+#0 /home/tplaystclick/public_html/api/game-recharge-bank.php(15): get_api_key()
+#1 {main}
+  thrown in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 9
+[22-Dec-2024 07:26:05 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:06 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:06 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:08 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:09 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:10 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:10 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:11 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:11 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:17 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:19 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:23 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:23 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:26:23 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:27:03 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:27:05 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:27:10 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 07:27:24 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 18
+[22-Dec-2024 14:29:11 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function str_starts_with() in /home/tplaystclick/public_html/api/game-recharge-bank.php:9
+Stack trace:
+#0 /home/tplaystclick/public_html/api/game-recharge-bank.php(15): get_api_key()
+#1 {main}
+  thrown in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 9
+[22-Dec-2024 14:29:20 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function str_starts_with() in /home/tplaystclick/public_html/api/game-recharge-bank.php:9
+Stack trace:
+#0 /home/tplaystclick/public_html/api/game-recharge-bank.php(15): get_api_key()
+#1 {main}
+  thrown in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 9
+[22-Dec-2024 14:32:06 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function str_starts_with() in /home/tplaystclick/public_html/api/game-recharge-bank.php:9
+Stack trace:
+#0 /home/tplaystclick/public_html/api/game-recharge-bank.php(15): get_api_key()
+#1 {main}
+  thrown in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 9
+[22-Dec-2024 14:32:43 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function str_starts_with() in /home/tplaystclick/public_html/api/game-recharge-bank.php:9
+Stack trace:
+#0 /home/tplaystclick/public_html/api/game-recharge-bank.php(15): get_api_key()
+#1 {main}
+  thrown in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 9
+[22-Dec-2024 14:34:27 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function str_starts_with() in /home/tplaystclick/public_html/api/game-recharge-bank.php:9
+Stack trace:
+#0 /home/tplaystclick/public_html/api/game-recharge-bank.php(15): get_api_key()
+#1 {main}
+  thrown in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 9
+[22-Dec-2024 14:34:57 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function str_starts_with() in /home/tplaystclick/public_html/api/game-recharge-bank.php:9
+Stack trace:
+#0 /home/tplaystclick/public_html/api/game-recharge-bank.php(15): get_api_key()
+#1 {main}
+  thrown in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 9
+[22-Dec-2024 14:37:01 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 64
+[22-Dec-2024 14:38:20 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to undefined function str_starts_with() in /home/tplaystclick/public_html/api/game-recharge-bank.php:8
+Stack trace:
+#0 /home/tplaystclick/public_html/api/game-recharge-bank.php(14): get_api_key()
+#1 {main}
+  thrown in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 8
+[22-Dec-2024 14:38:48 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 59
+[22-Dec-2024 14:38:48 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1277184378728091678/HEqZnq1l4BVMD7ZMP7HJBRWbmX828x7mTC99sC7QUu-91xQcNy8JpQNu4Zlvvd3WFvaj): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 216
+[22-Dec-2024 14:39:47 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 59
+[22-Dec-2024 14:39:48 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1277184378728091678/HEqZnq1l4BVMD7ZMP7HJBRWbmX828x7mTC99sC7QUu-91xQcNy8JpQNu4Zlvvd3WFvaj): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 216
+[22-Dec-2024 14:42:50 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 71
+[22-Dec-2024 14:42:51 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1277184378728091678/HEqZnq1l4BVMD7ZMP7HJBRWbmX828x7mTC99sC7QUu-91xQcNy8JpQNu4Zlvvd3WFvaj): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 228
+[22-Dec-2024 14:44:04 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 71
+[22-Dec-2024 14:44:04 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1277184378728091678/HEqZnq1l4BVMD7ZMP7HJBRWbmX828x7mTC99sC7QUu-91xQcNy8JpQNu4Zlvvd3WFvaj): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 228
+[22-Dec-2024 14:45:21 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 71
+[22-Dec-2024 14:45:22 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1264601714565185587/XqJE7CccDAUZP4Tl2Z0ENAmHm2Z3SIKcXCn-4tDkub25UP15dzDBDR-sJpZVymWf2k08): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 228
+[22-Dec-2024 14:49:13 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 71
+[22-Dec-2024 14:49:13 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1264601714565185587/XqJE7CccDAUZP4Tl2Z0ENAmHm2Z3SIKcXCn-4tDkub25UP15dzDBDR-sJpZVymWf2k08): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 228
+[22-Dec-2024 14:54:26 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 71
+[22-Dec-2024 14:54:27 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1264601714565185587/XqJE7CccDAUZP4Tl2Z0ENAmHm2Z3SIKcXCn-4tDkub25UP15dzDBDR-sJpZVymWf2k08): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 228
+[22-Dec-2024 14:56:27 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 69
+[22-Dec-2024 14:56:28 Asia/Ho_Chi_Minh] PHP Warning:  file_get_contents(https://discord.com/api/webhooks/1264601714565185587/XqJE7CccDAUZP4Tl2Z0ENAmHm2Z3SIKcXCn-4tDkub25UP15dzDBDR-sJpZVymWf2k08): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 226
+[22-Dec-2024 15:00:04 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 64
+[22-Dec-2024 15:00:29 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/api/game-recharge-bank.php on line 69

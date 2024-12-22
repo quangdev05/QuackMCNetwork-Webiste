@@ -224,7 +224,8 @@ INSERT INTO `settings` (`id`, `name`, `value`) VALUES
 (5, 'card_partner_id', 'card_partner_id'),
 (6, 'card_partner_key', 'card_partner_key'),
 (7, 'discord_webhook_recharge_bank', 'discord_webhook_recharge_bank'),
-(8, 'api_link', 'api_link');
+(8, 'api_link', 'api_link'),
+(9, 'api_sepay', 'api_sepay');
 
 -- --------------------------------------------------------
 

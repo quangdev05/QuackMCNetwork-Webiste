@@ -26,3 +26,13 @@
 [16-Nov-2024 18:01:05 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
 [16-Nov-2024 18:06:07 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
 [16-Nov-2024 18:06:18 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
+[27-Nov-2024 14:01:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
+[28-Nov-2024 11:09:51 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
+[28-Nov-2024 11:13:53 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
+[28-Nov-2024 11:13:54 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/libs/rcon.php on line 40
+[28-Nov-2024 11:13:56 Asia/Ho_Chi_Minh] PHP Warning:  fsockopen(): unable to connect to 103.29.2.188:19132 (Connection refused) in /home/tplaystclick/public_html/libs/rcon.php on line 40
+[28-Nov-2024 11:18:21 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
+[28-Nov-2024 11:18:31 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
+[28-Nov-2024 11:18:34 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
+[08-Dec-2024 18:16:47 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
+[22-Dec-2024 06:38:01 Asia/Ho_Chi_Minh] PHP Notice:  Undefined index: user_id in /home/tplaystclick/public_html/assets/js/ajaxs/action/vongquay-freegems.php on line 5
