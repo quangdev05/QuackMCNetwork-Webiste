@@ -9,10 +9,8 @@ session_start();
 checklogin();
 $skin_url = getSkinURL($_SESSION['username']);
 
-// Lấy giá trị tongnap từ cơ sở dữ liệu
 $PTDUNG = new PTDUNG();
 $tongnap_data = $PTDUNG->get_row("SELECT tongnap FROM tong_nap WHERE user_id = '" . $_SESSION['user_id'] . "'");
-// Kiểm tra nếu tồn tại dữ liệu tongnap
 $tongnap_text = isset($tongnap_data['tongnap']) && $tongnap_data['tongnap'] !== null ? $tongnap_data['tongnap'] . '₫' : '0₫';
 ?>
 
