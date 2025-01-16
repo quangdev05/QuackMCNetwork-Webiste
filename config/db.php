@@ -2,11 +2,13 @@
 session_start();
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 
-abstract class AuthMeController {
+abstract class AuthMeController
+{
 
     const AUTHME_TABLE = 'authme';
 
-    function checkPassword($username, $password) {
+    function checkPassword($username, $password)
+    {
         if (is_scalar($username) && is_scalar($password)) {
             $hash = $this->getHashFromDatabase($username);
             if ($hash) {
@@ -16,7 +18,8 @@ abstract class AuthMeController {
         return false;
     }
 
-    function isUserRegistered($username) {
+    function isUserRegistered($username)
+    {
         $mysqli = $this->getAuthmeMySqli();
         if ($mysqli !== null) {
             $stmt = $mysqli->prepare('SELECT 1 FROM ' . self::AUTHME_TABLE . ' WHERE username = ?');
@@ -27,7 +30,8 @@ abstract class AuthMeController {
         return true;
     }
 
-    function isEmailRegistered($email) {
+    function isEmailRegistered($email)
+    {
         $mysqli = $this->getAuthmeMySqli();
         if ($mysqli !== null) {
             $stmt = $mysqli->prepare('SELECT 1 FROM ' . self::AUTHME_TABLE . ' WHERE email = ?');
@@ -38,7 +42,8 @@ abstract class AuthMeController {
         return true;
     }
 
-    function register($username, $password, $email) {
+    function register($username, $password, $email)
+    {
         $email = $email ? $email : 'your@email.com';
         $mysqli = $this->getAuthmeMySqli();
         if ($mysqli !== null) {
@@ -52,7 +57,8 @@ abstract class AuthMeController {
         return false;
     }
 
-    function changePassword($username, $password) {
+    function changePassword($username, $password)
+    {
         $mysqli = $this->getAuthmeMySqli();
         if ($mysqli !== null) {
             $hash = $this->hash($password);
@@ -68,17 +74,22 @@ abstract class AuthMeController {
     protected abstract function hash($password);
     protected abstract function isValidPassword($password, $hash);
 
-    private function getAuthmeMySqli() {
-        $mysqli = new mysqli('localhost', 'tplaystclick_playst', 'tplaystclick_playst', 'tplaystclick_playst');
+    private function getAuthmeMySqli()
+    { # Config1
+        $mysqli = new mysqli('localhost', 'quackmc_net', 'WwGhC2kwxdpdtF3r', 'quackmc_net');
         if (mysqli_connect_error()) {
-            printf('Could not connect to AuthMe database. Errno: %d, error: "%s"',
-                mysqli_connect_errno(), mysqli_connect_error());
+            printf(
+                'Could not connect to AuthMe database. Errno: %d, error: "%s"',
+                mysqli_connect_errno(),
+                mysqli_connect_error()
+            );
             return null;
         }
         return $mysqli;
     }
 
-    private function getHashFromDatabase($username) {
+    private function getHashFromDatabase($username)
+    {
         $mysqli = $this->getAuthmeMySqli();
         if ($mysqli !== null) {
             $stmt = $mysqli->prepare('SELECT password FROM ' . self::AUTHME_TABLE . ' WHERE username = ?');
@@ -99,17 +110,15 @@ class PTDUNG
 
     function connect()
     {
-        if (!$this->ketnoi)
-        {
-            $this->ketnoi = mysqli_connect('localhost', 'tplaystclick_playst', 'tplaystclick_playst', 'tplaystclick_playst') or die('Bảo Trì');
+        if (!$this->ketnoi) { #Config2
+            $this->ketnoi = mysqli_connect('localhost', 'quackmc_net', 'WwGhC2kwxdpdtF3r', 'quackmc_net') or die('Bảo Trì');
             mysqli_query($this->ketnoi, "set names 'utf8'");
         }
     }
 
     function dis_connect()
     {
-        if ($this->ketnoi)
-        {
+        if ($this->ketnoi) {
             mysqli_close($this->ketnoi);
         }
     }
@@ -157,12 +166,11 @@ class PTDUNG
         $this->connect();
         $field_list = '';
         $value_list = '';
-        foreach ($data as $key => $value)
-        {
+        foreach ($data as $key => $value) {
             $field_list .= ",$key";
-            $value_list .= ",'".mysqli_real_escape_string($this->ketnoi, $value)."'";
+            $value_list .= ",'" . mysqli_real_escape_string($this->ketnoi, $value) . "'";
         }
-        $sql = 'INSERT INTO '.$table. '('.trim($field_list, ',').') VALUES ('.trim($value_list, ',').')';
+        $sql = 'INSERT INTO ' . $table . '(' . trim($field_list, ',') . ') VALUES (' . trim($value_list, ',') . ')';
         return mysqli_query($this->ketnoi, $sql);
     }
 
@@ -170,11 +178,10 @@ class PTDUNG
     {
         $this->connect();
         $sql = '';
-        foreach ($data as $key => $value)
-        {
-            $sql .= "$key = '".mysqli_real_escape_string($this->ketnoi, $value)."',";
+        foreach ($data as $key => $value) {
+            $sql .= "$key = '" . mysqli_real_escape_string($this->ketnoi, $value) . "',";
         }
-        $sql = 'UPDATE '.$table. ' SET '.trim($sql, ',').' WHERE '.$where;
+        $sql = 'UPDATE ' . $table . ' SET ' . trim($sql, ',') . ' WHERE ' . $where;
         return mysqli_query($this->ketnoi, $sql);
     }
 
@@ -190,7 +197,7 @@ class PTDUNG
         $this->connect();
         $result = mysqli_query($this->ketnoi, $sql);
         if (!$result) {
-            die ('Câu truy vấn bị sai');
+            die('Câu truy vấn bị sai');
         }
         $return = array();
         while ($row = mysqli_fetch_assoc($result)) {
@@ -205,7 +212,7 @@ class PTDUNG
         $this->connect();
         $result = mysqli_query($this->ketnoi, $sql);
         if (!$result) {
-            die ('Câu truy vấn bị sai');
+            die('Câu truy vấn bị sai');
         }
         $row = mysqli_fetch_assoc($result);
         mysqli_free_result($result);
@@ -220,7 +227,7 @@ class PTDUNG
         $this->connect();
         $result = mysqli_query($this->ketnoi, $sql);
         if (!$result) {
-            die ('Câu truy vấn bị sai');
+            die('Câu truy vấn bị sai');
         }
         return mysqli_num_rows($result);
     }

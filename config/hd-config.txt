@@ -1,0 +1,5 @@
+Tại file "db1.php" có 2 config MySQL Database:
+- Config1 (dòng 78)
+- Config2 (dòng 113)
+ + Có thể sử dụng Ctrl + F để tìm config.
+Tại file "db2.php" chỉ có 1 config MySQL Database duy nhất.
