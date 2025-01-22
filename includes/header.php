@@ -45,7 +45,7 @@ require_once(__DIR__ . "/helpers.php");
   </nav>
 
   <a class="logo basis-1/5" href="/">
-    <img src="" alt="QuackMC Network">
+    <img src="https://www.playst.click/assets/images/logo-chu.png" alt="QuackMC Network">
   </a>
 
   <nav class="top-menu basis-3/5 hidden xl:block" aria-label="Main Navigation Right">
